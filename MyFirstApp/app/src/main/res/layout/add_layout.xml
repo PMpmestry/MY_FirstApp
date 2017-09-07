@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="56dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/TF_Name"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/TF_Mobile"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Phone No."
+            android:digits="0123456789"
+            android:inputType="phone"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/TF_Email"
+            android:layout_width="304dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Email Id"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/DOB_field"
+            android:layout_width="304dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:hint="Date of Birth"
+            android:paddingTop="12dp"
+            android:textSize="20sp"
+            android:inputType="none"/>
+
+        <EditText
+            android:id="@+id/DOA_field"
+            android:layout_width="304dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:hint="Anniversary Date"
+            android:paddingTop="12dp"
+            android:textSize="20sp"
+            android:inputType="none"/>
+
+        <EditText
+            android:id="@+id/TF_TelNo"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="LandLine No."
+            android:digits="0123456789"
+            android:inputType="phone"
+            android:textSize="20sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp">
+            <Button
+                android:id="@+id/But_clear"
+                android:layout_width="143dp"
+                android:layout_height="51dp"
+                android:text="CLEAR All" />
+
+            <Button
+                android:id="@+id/But_submit"
+                android:layout_width="143dp"
+                android:layout_height="51dp"
+                android:layout_toRightOf="@id/But_clear"
+                android:text="SUBMIT" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
+

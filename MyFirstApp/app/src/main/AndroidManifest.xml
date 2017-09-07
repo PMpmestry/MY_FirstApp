@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myfirstapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="Main Screen"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".long_Click"
+            android:label="Main Screen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Add_Page1"
+            android:label="New Customer"
+            android:parentActivityName=".long_Click">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".long_Click" />
+        </activity>
+        <!--<activity
+            android:name=".Update_Page"
+            android:label="@string/title_activity_update__page"
+            android:theme="@style/AppTheme.NoActionBar"></activity>-->
+    </application>
+
+</manifest>
